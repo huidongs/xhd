@@ -6,7 +6,13 @@ package threadcoreknowledge.createthread;
  * @Desc:
  */
 public class ThreadStyle extends Thread{
-    public static void main(String[] args) {
 
+    @Override
+    public void run() {
+        System.out.println("使用Thread类实现线程");
+    }
+
+    public static void main(String[] args) {
+        new ThreadStyle().start();
     }
 }
