@@ -9,6 +9,7 @@ package threadcoreknowledge.threadobjectclasscommonmethods;
  */
 public class Wait {
     public static Object object = new Object();
+
     static class Thread1 extends Thread {
         @Override
         public void run() {
@@ -23,6 +24,7 @@ public class Wait {
             }
         }
     }
+
     static class Thread2 extends Thread {
         @Override
         public void run() {
@@ -32,6 +34,7 @@ public class Wait {
             }
         }
     }
+
     public static void main(String[] args) throws InterruptedException {
         Thread1 thread1 = new Thread1();
         Thread2 thread2 = new Thread2();

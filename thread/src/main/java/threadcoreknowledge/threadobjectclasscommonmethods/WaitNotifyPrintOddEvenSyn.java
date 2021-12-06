@@ -8,6 +8,7 @@ package threadcoreknowledge.threadobjectclasscommonmethods;
 public class WaitNotifyPrintOddEvenSyn{
     private static Object lock = new Object();
     static int count;
+
     public static void main(String[] args) {
         new Thread(new Runnable() {
             @Override
